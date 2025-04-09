@@ -1,0 +1,38 @@
+/* app/components/FeaturedPortfolio.module.css */
+.container {
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.imageContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.artwork {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  will-change: opacity; /* Optimize for animation performance */
+}
+
+.imageCaption {
+  position: fixed;
+  bottom: 1.5rem;
+  font-size: 24px;
+  z-index: 10;
+  color: rgb(34, 34, 34);
+  font-style: italic;
+  text-align: center;
+  width: 100%;
+  padding: 0 20px;
+  will-change: opacity; /* Optimize for animation performance */
+}
