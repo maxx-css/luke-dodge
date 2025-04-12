@@ -1,8 +1,8 @@
 // app/portfolio/[slug]/page.js
-import { createClient } from "@sanity/client";
-import Link from "next/link";
-import ArtworkGrid from "@/app/components/ArtworkGrid";
-import styles from "./Portfolio.module.css";
+import { createClient } from '@sanity/client';
+import Link from 'next/link';
+import ArtworkGrid from '@/app/components/ArtworkGrid';
+import styles from './Portfolio.module.css';
 import { apiVersion, dataset, projectId } from '../../../sanity/env';
 import Image from 'next/image';
 
@@ -77,7 +77,7 @@ export default async function Portfolio({ params }) {
     return (
       <div className={styles.container}>
         <h1 className={styles.heading}>Portfolio not found</h1>
-        <Link href="/" className={styles.link}>
+        <Link href='/' className={styles.link}>
           Return to home
         </Link>
       </div>
@@ -85,11 +85,16 @@ export default async function Portfolio({ params }) {
   }
 
   // Determine if we need to show collections heading
-  const hasSubPortfolios = portfolio.subPortfolios && portfolio.subPortfolios.length > 0;
+  const hasSubPortfolios =
+    portfolio.subPortfolios && portfolio.subPortfolios.length > 0;
   const showCollectionsHeading = hasSubPortfolios;
 
+  // Determine the class for the container based on the slug
+  const containerClass =
+    slug === 'concord' ? styles.concordBackground : styles.defaultBackground;
+
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${containerClass}`}>
       {/* Simplified breadcrumb - only show parent links */}
       <div className={styles.breadcrumbs}>
         <Link href='/' className={styles.breadcrumbLink}>
@@ -128,19 +133,20 @@ export default async function Portfolio({ params }) {
           {/* Only show Collections heading if there are sub-portfolios */}
           {showCollectionsHeading && (
             <div className={styles.logoContainer}>
-            <Image
-              src='/concord.jpeg'
-              alt='Concord Logo'
-              width={500} // This is needed for Next.js optimization but won't constrain display size
-              height={200} // Approximate height, will maintain aspect ratio
-              style={{
-                width: 'auto', // Allow natural width
-                height: 'auto', // Maintain aspect ratio
-                maxWidth: '100%', // Prevent overflow on small screens
-              }}
-              priority // Loads the image with higher priority
-              className={styles.subHeading}
-            />
+              <Image
+                src='/concord.jpeg'
+                alt='Concord Logo'
+                width={500} // This is needed for Next.js optimization but won't constrain display size
+                height={200} // Approximate height, will maintain aspect ratio
+                style={{
+                  width: 'auto', // Allow natural width
+                  height: 'auto', // Maintain aspect ratio
+                  maxWidth: '100%', // Prevent overflow on small screens
+                  flexGrow: '1',
+                }}
+                priority // Loads the image with higher priority
+                className={styles.subHeading}
+              />
             </div>
           )}
           <div className={styles.portfolioGrid}>

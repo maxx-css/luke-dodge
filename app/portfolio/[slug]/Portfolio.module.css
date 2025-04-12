@@ -1,5 +1,13 @@
 /* app/portfolio/[slug]/Portfolio.module.css */
 
+.defaultBackground {
+    background-color: #1c1c1c; /* Default background color for other routes */
+}
+
+.concordBackground {
+    background-color: black; /* Background color for /portfolio/concord */
+}
+
 .logoContainer {
   display: flex;
   justify-content: center;
@@ -71,13 +79,13 @@
   .portfolioGrid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 40px;
+    /* gap: 40px; */
     margin-bottom: 60px;
   }
   
   .portfolioCard {
     text-decoration: none;
-    color: inherit;
+    color: #5c6b73;
     transition: transform 0.3s ease;
   }
   
@@ -153,9 +161,9 @@
 .portfolioGrid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 40px;
+    /* gap: 40px; */
     margin: 0 auto 60px auto;
-    max-width: 90%;
+    /* max-width: 90%; */
     justify-content: center;
   }
   
@@ -163,7 +171,7 @@
   @media (min-width: 900px) {
     .portfolioGrid {
       grid-template-columns: repeat(3, 1fr);
-      max-width: 1000px;
+      /* max-width: 1000px; */
     }
   }
   
