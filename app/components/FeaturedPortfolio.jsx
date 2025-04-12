@@ -81,13 +81,13 @@ export default function FeaturedPortfolio({ artworks }) {
     const imgA = document.createElement('img');
     imgA.style.width = '100%';
     imgA.style.height = '100%';
-    imgA.style.objectFit = 'cover';
+    imgA.style.objectFit = 'contain';
     artworkA.appendChild(imgA);
     
     const imgB = document.createElement('img');
     imgB.style.width = '100%';
     imgB.style.height = '100%';
-    imgB.style.objectFit = 'cover';
+    imgB.style.objectFit = 'contain';
     artworkB.appendChild(imgB);
     
     // Track which container is active
@@ -113,8 +113,8 @@ export default function FeaturedPortfolio({ artworks }) {
         const tempImg = new Image();
         tempImg.onload = () => {
           // Calculate size
-          const maxHeight = window.innerHeight * 0.8;
-          const maxWidth = window.innerWidth * 0.9;
+          const maxHeight = window.innerHeight;
+          const maxWidth = window.innerWidth;
           
           let width = tempImg.width;
           let height = tempImg.height;

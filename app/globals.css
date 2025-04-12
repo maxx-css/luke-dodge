@@ -33,7 +33,7 @@ a {
   width: 100%;
   padding: 20px;
   z-index: 1000;
-  background: white;
+  background: #ffffff00;
   /* Remove the border-bottom */
 }
 
@@ -41,11 +41,12 @@ a {
   font-size: 24px;
   letter-spacing: 1px;
   text-decoration: none;
-  color: #373737;
+  color: white ;
   font-weight: 500;
 }
 
 .site-main {
   position: relative;
   min-height: 100vh;
+  background-color: black;
 }

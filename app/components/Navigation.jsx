@@ -25,6 +25,7 @@ export default function Navigation({ portfolios }) {
 
   // Close menu when route changes
   useEffect(() => {
+      console.log('Current pathname:', pathname);
     setIsOpen(false);
   }, [pathname]);
 
