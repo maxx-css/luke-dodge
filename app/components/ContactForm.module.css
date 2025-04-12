@@ -14,7 +14,7 @@
     display: block;
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
-    color: #222;
+    color: #e9ecef;
     font-weight: normal;
     letter-spacing: 0.02em;
   }
@@ -23,18 +23,18 @@
   .textarea {
     width: 100%;
     padding: 0.75rem;
-    border: 1px solid #ddd;
+    border: 1px solid #e9ecef;
     background-color: transparent;
     font-family: 'EB Garamond', serif;
     font-size: 1.1rem;
-    color: #222;
+    color: #e9ecef;
     transition: border-color 0.3s;
   }
   
   .input:focus,
   .textarea:focus {
     outline: none;
-    border-color: #888;
+    border-color: #e9ecef;
   }
   
   .textarea {
@@ -44,8 +44,8 @@
   
   .submitButton {
     background: transparent;
-    border: 1px solid #222;
-    color: #222;
+    border: 1px solid #e9ecef;
+    color: #e9ecef;
     padding: 0.75rem 2rem;
     font-family: 'EB Garamond', serif;
     font-size: 1.1rem;
@@ -55,7 +55,7 @@
   }
   
   .submitButton:hover {
-    background-color: #222;
+    background-color: #e9ecef;
     color: #fff;
   }
   
@@ -73,7 +73,7 @@
   .successMessage {
     text-align: center;
     font-size: 1.2rem;
-    color: #222;
+    color: #e9ecef;
     padding: 2rem 0;
     font-family: 'EB Garamond', serif;
     letter-spacing: 0.02em;

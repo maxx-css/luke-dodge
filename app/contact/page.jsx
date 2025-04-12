@@ -7,7 +7,9 @@ import styles from './contact.module.css';
 export default function Contact() {
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Contact</h1>
+      <h1 className={styles.title} style={{color: '#e9ecef'}}>
+        Contact
+      </h1>
       <div className={styles.formContainer}>
         <FormspreeProvider>
           <ContactForm />

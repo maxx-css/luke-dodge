@@ -10,7 +10,7 @@
     letter-spacing: 1px;
     cursor: pointer;
     z-index: 50;
-    color: white;
+    color: #f8f9fa;
 }
   
 .navigationPanel {
@@ -130,7 +130,7 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: #373737; /* Transparent black */
+    background-color: #1c1c1cd1; /* Transparent black */
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;

@@ -2,7 +2,7 @@
 .container {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 110px 20px;
     font-family: 'EB Garamond', serif;
   }
   
@@ -59,7 +59,7 @@
   }
   
   .socialLinks a {
-    color: #333;
+    color: #e9ecef;
     text-decoration: none;
   }
   
@@ -74,7 +74,7 @@
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     text-decoration: none;
-    color: #333;
+    color: #e9ecef;
   }
   
   .cvLink:hover {
@@ -84,11 +84,13 @@
   @media (min-width: 768px) {
     .content {
       flex-direction: row;
-      align-items: flex-start;
+      align-items: anchor-center;
     }
     
     .profileImage {
       margin: 0;
+      padding: 25px;
+      max-width: 50%;
     }
     
     .bioContainer {

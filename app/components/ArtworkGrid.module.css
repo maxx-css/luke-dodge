@@ -3,27 +3,25 @@
 .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 columns for larger images */
-    gap: 3vw; /* Minimal gap between artworks */
+    gap: 1vw; /* Minimal gap between artworks */
     margin-top: 40px;
     width: 100%; /* Full width */
     max-width: 100%; /* No maximum width constraint */
     margin-left: auto;
     margin-right: auto;
-    padding: 0 2vw; /* Small side padding */
 
 }
   
 .gridItem {
     cursor: pointer;
-    margin-bottom: 1vw; /* Minimal bottom margin */
+    margin-bottom: 0;
 }
   
 .imageContainer {
     position: relative;
     width: 100%;
-    padding-top: 75%; /* Less square for better display of art */
+    padding-top: 100%; /* Less square for better display of art */
     overflow: hidden;
-    margin-bottom: 10px;
 }
   
 .innerContainer {
@@ -39,9 +37,10 @@
   
 .thumbnail {
     max-width: 100%;
-    max-height: 100%;
-    object-fit: contain; /* Maintains natural proportions */
+    /* max-height: 100%; */
+    object-fit: cover; /* Maintains natural proportions */
     display: block;
+    height: -webkit-fill-available;
 }
   
 .videoThumbnail {
@@ -91,6 +90,7 @@
     font-weight: normal;
     font-family: 'EB Garamond', serif;
     text-align: center; /* Ensures title is centered */
+    color: #5c6b73;
 }
   
 .artworkYear {

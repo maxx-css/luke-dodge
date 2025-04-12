@@ -6,9 +6,9 @@
   margin: 2rem 0;
 }
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px;
+    /* max-width: 1200px; */
+    /* margin: 0 auto; */
+    padding: 40px 0;
     font-family: 'EB Garamond', serif;
   }
   
@@ -188,6 +188,7 @@
 .breadcrumbs {
     margin-top: 25px; /* Increased top margin to prevent overlap */
     margin-bottom: 35px;
+    margin-left: 18px;
     color: #555;
     font-size: 16px;
     letter-spacing: 0.3px;
@@ -198,7 +199,7 @@
   }
   
   .breadcrumbLink {
-    color: #333;
+    color: #5c6b73;
     text-decoration: none;
     padding: 4px 2px;
     border-bottom: 1px solid transparent; /* Add transparent border for hover effect */
@@ -207,7 +208,7 @@
   
   .breadcrumbLink:hover {
     text-decoration: none; /* Remove underline */
-    border-bottom-color: #333; /* Show border on hover instead */
+    border-bottom-color: #ecebe4; /* Show border on hover instead */
   }
   
   .breadcrumbSeparator {
@@ -216,6 +217,6 @@
   }
   
   .breadcrumbCurrent {
-    color: #555;
+    color: #5c6b73;
     padding: 4px 2px;
   }
