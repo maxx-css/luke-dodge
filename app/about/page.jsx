@@ -5,8 +5,8 @@ import styles from './About.module.css';
 
 // Initialize the Sanity client
 const client = createClient({
-  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
-  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || 'production',
+  projectId: 'yl4o1078',
+  dataset: 'lukedataset',
   apiVersion: '2023-03-01',
   useCdn: false, // For fresh data in SSR
 });
