@@ -5,8 +5,8 @@ import FeaturedPortfolio from './components/FeaturedPortfolio';
 
 // Initialize the Sanity client (server-side)
 const client = createClient({
-  projectId: 'yl4o1078',
-  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || 'production',
+  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
+  dataset:  'production',
   apiVersion: '2023-03-01',
   useCdn: false, // Setting to false for fresh data on server
 });

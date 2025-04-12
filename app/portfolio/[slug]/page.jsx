@@ -8,7 +8,7 @@ import Image from 'next/image';
 
 // Initialize the Sanity client (server-side)
 const client = createClient({
-  projectId: 'yl4o1078',
+  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
   dataset: dataset || 'production',
   apiVersion: '2023-03-01',
   useCdn: false, // Setting to false for fresh data on server
